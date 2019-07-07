@@ -388,7 +388,7 @@ namespace Quarto
                                 tmp2[i, j] = new Figurine(storage[ifig, jfig]);
                                 if (Stop(tmp2)) flag = true;
                             }
-                } while (flag || cnt < 256);
+                } while (flag || cnt < 9);
 
                 g.DrawEllipse(new Pen(Color.LimeGreen, 3), (jbrd + 0.05f) * size, (ibrd + 0.05f) * size, size * 0.9f, size * 0.9f);
                 g.DrawImage(pictureBox[istrg, jstrg].Image, jbrd * size + 4, ibrd * size + 4, new Rectangle(0, 0, size, size), GraphicsUnit.Pixel);
